@@ -48,7 +48,7 @@ export default function Home() {
     persistSession: true,
     detectSessionInUrl: true
   }
-  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -58,9 +58,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Whoa
-        </h1>
+        <div>
+          <div>
+            <h1 className={styles.title}>
+              Which pill?
+            </h1>
+          </div>
+        </div>
+        <div className={styles.wrapper}>
+          <div className={styles.left}>
+            Blue
+          </div>
+          <div className={styles.right}>
+            Red
+          </div>
+        </div>
+{/* 
         <button
           type="button"
           onClick={createQuestion}
@@ -73,7 +86,7 @@ export default function Home() {
               <li key={question.id}>{question.question}</li>
             ))
           }
-        </div>
+        </div> */}
       </main >
 
       <footer className={styles.footer}>
